@@ -13,7 +13,7 @@ jar  {
     }
 
     destinationDir = file(".")
-    archiveName = 'AntLabMain.jar'
+    archiveName = 'M2.jar'
 }
 
 dependencies {
