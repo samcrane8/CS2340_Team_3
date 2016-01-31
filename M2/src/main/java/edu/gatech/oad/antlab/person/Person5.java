@@ -30,8 +30,20 @@ public class Person5 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  //Person 5 put your implementation here
-	  return null;
+		final int ROTATION = 2;
+		char temp;
+		int index;
+		char[] arr = input.toCharArray();
+		int i = 0; // keeps track of the number of rotations
+		while (i < ROTATION) {
+			for (int j = 0; j < arr.length - 1; j++) {
+				temp = arr[j];
+				arr[j] = arr[j+1];
+				arr[j+1] = temp;
+			}
+			i++;
+		}
+		return new String(arr);
 	}
 	
 	/**
