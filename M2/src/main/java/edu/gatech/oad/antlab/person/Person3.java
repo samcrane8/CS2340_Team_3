@@ -43,8 +43,8 @@ public class Person3 {
 	 */
 	private String calc(String input) {
 		String reversedString = "";
-		int length = input.length();
-		for(int i = length - 1; i >= 0; i --){
+		int inputLength = input.length();
+		for(int i = inputLength - 1; i >= 0; i --){
 			reversedString = reversedString + input.charAt(i);
 		}
 		return reversedString;
