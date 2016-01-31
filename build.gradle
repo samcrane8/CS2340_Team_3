@@ -1,0 +1,25 @@
+
+apply plugin: 'application'
+apply plugin: 'java'
+version = '1.0'
+mainClassName='AntLabMain'
+
+//Define the contents of the jar file
+jar  {
+    manifest {
+        attributes  'Implementation-Title' : 'AntLabMain' ,
+                'Implementation-Version' : version,
+                'Main-Class' : 'AntlabMain'
+    }
+
+    destinationDir = file(".")
+    archiveName = 'AntLabMain.jar'
+}
+
+dependencies {
+    compile group: 'commons-collections', name: 'commons-collections', version: '3.2'
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+}
+repositories {
+    mavenCentral()
+}
