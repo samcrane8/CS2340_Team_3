@@ -1,2 +1,12 @@
 
 .idea/workspace.xml
+
+*.lock
+
+*.iml
+
+*.lock
+
+*.bin
+
+*.bin
