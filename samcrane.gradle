@@ -9,7 +9,7 @@ jar  {
     manifest {
         attributes  'Implementation-Title' : 'AntLabMain' ,
                 'Implementation-Version' : version,
-                'Main-Class' : 'AntlabMain'
+                'Main-Class' : 'AntLabMain'
     }
 
     destinationDir = file(".")
