@@ -38,13 +38,16 @@ public class Person2 {
 
 	  	Random r = new Random();
 
-	  	while (input.length() > 0) {
-	  		output += remove.input(r.nextInt(input.length()));
+	  	while (counter < input.length()) {
+	  		if (r.nextBoolean()) {
+	  			output = output + input.charAt(counter);
+	  		} else {
+	  			output = input.charAt(counter)+ output;
+	  		}
 	  		counter++;
 	  	}
 	  	return output;
-	}
-	/**
+	}	/**
 	 * Return a string rep of this object
 	 * that varies with an input string
 	 *
