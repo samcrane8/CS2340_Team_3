@@ -39,8 +39,8 @@ public class Person6 {
         }
         ans[input.length() - 2] = temp1;
         ans[input.length() - 1] = temp2;
-        ansString = new String(ans);
-        return ansString();
+        String ansString = new String(ans);
+        return ansString;
     }
 
     /**
