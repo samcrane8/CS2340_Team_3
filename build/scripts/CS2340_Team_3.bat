@@ -69,7 +69,7 @@ set CMD_LINE_ARGS=%$
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\M2.jar;%APP_HOME%\lib\commons-collections-3.2.jar
+set CLASSPATH=%APP_HOME%\lib\CS2340_Team_3-1.0.jar;%APP_HOME%\lib\resource.jar;%APP_HOME%\lib\tools.jar
 
 @rem Execute CS2340_Team_3
 "%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %C_S2340_TEAM_3_OPTS%  -classpath "%CLASSPATH%" AntLabMain %CMD_LINE_ARGS%
