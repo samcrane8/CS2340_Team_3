@@ -8,17 +8,8 @@ repositories {
 
 def jdkHome = System.getenv("JAVA_HOME")
 
-
-sourceSets {
-    main {
-        java {
-            srcDir 'M2/src/main/java'
-        }
-    }
-}
-
 dependencies {
-    compile files('./M2/lib/resources.jar')
+    compile files('./lib/resources.jar')
     compile files("$jdkHome/lib/tools.jar")
 }
 
